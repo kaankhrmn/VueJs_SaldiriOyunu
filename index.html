@@ -24,7 +24,7 @@
             </div>
         </div>
         <div id="me" class="container">
-            <h2>Can Boz</h2>
+            <h2>Kaan</h2>
             <div class="bar">
                 <div class="barValue" :style="myBarStyles"></div>
                 <p class="percentage">{{myHealth>0 ? myHealth :0}}%</p>
@@ -33,7 +33,7 @@
         <div class="container" v-if="winner">
             <h2>Oyun Bitti!</h2>
             <h3 v-if="winner === 'computer'">Bilgisayar Kazandı!</h3>
-            <h3 v-else-if="winner === 'me'">Can Boz Kazandı!</h3>
+            <h3 v-else-if="winner === 'me'">Kaan Kazandı!</h3>
             <h3 v-else>Berabere!</h3>
             <button @click="newGame()">Yeni Oyun</button>
         </div>
